@@ -2,23 +2,23 @@
   <div id="home" class="home">
     <MyNav/>
     <div class="big-text">
-      <h1>DISCOVER LIMITED SNEAKERS WITHOUT LIMITATION</h1>
+      <h1 v-motion :initial="{ opacity: 0, }" :enter="{ opacity: 1, }" :delay="100" >DISCOVER LIMITED SNEAKERS <span v-motion :initial="{ opacity: 0, }" :enter="{ opacity: 1, }" :delay="800">WITHOUT</span> <span v-motion :initial="{ opacity: 0, }" :enter="{ opacity: 1, }" :delay="900">LIMITATION</span>  </h1>
     </div>
     <div v-show="showDiv" class="station">
-        <div class="home-link links"><a @click="activeLink = 'home'" :class="[activeLink === 'home' ? 'active' : '']" class='links' href="#home"><font-awesome-icon icon="house" /></a></div>
-        <div class="dots links"><a @click="activeLink = 'about'" :class="[activeLink === 'about' ? 'active' : '']" class='links' href="#about"><font-awesome-icon icon="circle" /></a></div>
-        <div class="dots links"><a @click="activeLink = 'article'" :class="[activeLink === 'article' ? 'active' : '']" class='links' href="#article"><font-awesome-icon icon="circle" /></a></div>
-        <div class="dots links"><a @click="activeLink = 'product'" :class="[activeLink === 'product' ? 'active' : '']" class='links' href="#product"><font-awesome-icon icon="circle" /></a></div>
-        <div class="dots links"><a @click="activeLink = 'blog'" :class="[activeLink === 'blog' ? 'active' : '']" class='links' href="#blog"><font-awesome-icon icon="circle" /></a></div>
-        <div class="links phone"><a @click="activeLink = 'contact'" :class="[activeLink === 'contact' ? 'active' : '']" class='links' href="#contact"><font-awesome-icon icon="phone" /></a></div>
+        <div v-motion :initial="{  y: -600 }" :enter="{ y: 0 }" :delay="300" class="home-link links"><a @click="activeLink = 'home'" :class="[activeLink === 'home' ? 'active' : '']" class='links' href="#home"><font-awesome-icon icon="house" /></a></div>
+        <div v-motion :initial="{ y: -600 }" :enter="{ y: 0 }" :delay="500" class="dots links"><a @click="activeLink = 'about'" :class="[activeLink === 'about' ? 'active' : '']" class='links' href="#about"><font-awesome-icon icon="circle" /></a></div>
+        <div v-motion :initial="{ y: -600 }" :enter="{ y: 0 }" :delay="700" class="dots links"><a @click="activeLink = 'article'" :class="[activeLink === 'article' ? 'active' : '']" class='links' href="#article"><font-awesome-icon icon="circle" /></a></div>
+        <div v-motion :initial="{ y: -600 }" :enter="{ y: 0 }" :delay="900" class="dots links"><a @click="activeLink = 'product'" :class="[activeLink === 'product' ? 'active' : '']" class='links' href="#product"><font-awesome-icon icon="circle" /></a></div>
+        <div v-motion :initial="{ y: -600 }" :enter="{ y: 0 }" :delay="1100" class="dots links"><a @click="activeLink = 'blog'" :class="[activeLink === 'blog' ? 'active' : '']" class='links' href="#blog"><font-awesome-icon icon="circle" /></a></div>
+        <div v-motion :initial="{ y: -600 }" :enter="{ y: 0 }" :delay="1300" class="links phone"><a @click="activeLink = 'contact'" :class="[activeLink === 'contact' ? 'active' : '']" class='links' href="#contact"><font-awesome-icon icon="phone" /></a></div>
     </div>
     <div class="home-card">
-        <div class="card1 card">
+        <div v-motion :initial="{ y: 300 }" :enter="{ y: 0 }" :delay="700" class="card1 card">
           <img src="../images/vans.png" alt="">
         </div>
-      <div class="card2 card"><img src="../images/puma.png" alt=""></div>
-      <div class="card3 card"><img src="../images/nike_318-565950.webp" alt=""></div>
-      <div class="card4 card"><img src="../images/adidas_318-565831.avif" alt=""></div>
+      <div v-motion :initial="{ y: 300 }" :enter="{ y: 0 }" :delay="800" class="card2 card"><img src="../images/puma.png" alt=""></div>
+      <div v-motion :initial="{ y: 300 }" :enter="{ y: 0 }" :delay="900" class="card3 card"><img src="../images/nike_318-565950.webp" alt=""></div>
+      <div v-motion :initial="{ y: 300 }" :enter="{ y: 0 }" :delay="1000" class="card4 card"><img src="../images/adidas_318-565831.avif" alt=""></div>
     </div>
   </div>
 </template>

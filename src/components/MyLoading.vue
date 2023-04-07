@@ -1,9 +1,13 @@
 <template>
 	<div class="loading-screen">
 		<div class="nav-icon">
+			<!-- <p>LOADING...</p> -->
 			<h3>
-				ALOOFFIT
-				<img class="stroke" src="../images/stroke.jpg" alt="">
+				<div v-motion :initial="{opacity: 0,  x: 600 }" :enter="{ opacity: 1, x: 0 }" :delay="500" >
+					
+					ALOOFFIT
+				</div>
+				<img v-motion :initial="{opacity: 0,  x: -600 }" :enter="{ opacity: 1, x: 0 }" :delay="1000" class="stroke" src="../images/brush-stroke-grunge-transparent-background-6.png" alt="">
 			</h3>
 		</div>
 	</div>
@@ -28,14 +32,12 @@ export default {
 .stroke{
 	width: 500px;
 	display: block;
-	animation: bounce .5s ease-in-out;
 }
 .nav-icon{
 	font-family: 'Delicious Handrawn', cursive;
 	font-weight: 600;
 	font-size: 100px;
-	animation: bounce .3s ease-in-out;
-
+	/* animation: bounce .3s alternate infinite .8s; */
 }
 .loading-screen .icon {
 	animation: bounce 1s infinite;
@@ -44,7 +46,7 @@ export default {
 
 @keyframes bounce {
 	0% {
-		transform: scale(0.5);
+		opacity: 0;
 	}
 
 	/* 50% {
@@ -53,42 +55,10 @@ export default {
 	} */
 
 	100% {
-		transform: scale(1);
+		opacity: 1;
 	}
 }
-
-@media only screen and (max-width: 500px) {
-
-	.loading-screen {
-		display: flex;
-		justify-content: center;
-		padding-top: 70%;
-		padding-left: 70px;
-		width: 100%;
-		height: 100%;
-	}
-
-	.loading-screen .icon {
-		animation: swing 1s infinite;
-		width: 60px;
-	}
-
-	@keyframes swing {
-		0% {
-			transform: translateX(0px);
-			background: #66fcf1;
-			border-radius: 100%;
-		}
-
-		50% {
-			transform: translateX(-50px);
-		}
-
-		100% {
-			transform: translateX(0px);
-		}
-	}
-}</style>
+</style>
 
 
 

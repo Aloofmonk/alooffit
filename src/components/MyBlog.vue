@@ -1,5 +1,5 @@
 <template>
-	<div class="blog" id="blog">
+	<div v-motion :initial="{ opacity: 0 }" :visibleOnce="{ opacity: 1 }" :delay="600" class="blog" id="blog">
 		<div class="top-div">
 			<div class="text">BLOGS</div>
 			<div class="button-border">
@@ -131,12 +131,13 @@ img {
 	height: 300px;
 	object-fit: fill;
 	border-radius: 5px;
+	border: 1px solid black;
+
 }
 
 
 .card {
 	display: inline-block;
-	/* border: 1px solid black; */
 	margin-right: 20px;
 }
 

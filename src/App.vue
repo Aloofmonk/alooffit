@@ -52,6 +52,7 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto+Mono&family=Teko&display=swap');
 
 * {
+  /* overflow: hidden; */
   padding: 0;
   margin: 0;
   box-sizing: border-box;

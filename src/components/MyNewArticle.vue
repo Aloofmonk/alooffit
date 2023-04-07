@@ -1,15 +1,15 @@
 <template>
 	<div class="article" id="article">
 		<div class="top-div">
-			<div class="text">NEW ARTICLE</div>
-			<div class="button-border">
-				<div @click="more = !more, horizontalScrollUsed = !horizontalScrollUsed" class="button">
+			<div class="text">NEW <span v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="300">ARTICLE</span></div>
+			<div v-motion :initial="{ opacity: 0 }" :visibleOnce="{ opacity: 1 }" :delay="500" class="button-border">
+				<div v-motion :initial="{ opacity: 0, x: -100 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="800" @click="more = !more, horizontalScrollUsed = !horizontalScrollUsed" class="button">
 					{{more === true ? 'RESTORE' : 'VIEW MORE'}}
 				</div>
 			</div>
 		</div>
 		<font-awesome-icon :class="[horizontalScrollUsed === true ? 'font-icon-none': 'font-icon']" icon="arrow-right" shake />
-		<div @scroll="onScroll" class="bottom-div">
+		<div v-motion :initial="{ opacity: 0, x: -200 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="800" @scroll="onScroll" class="bottom-div">
 			<div :class="[more === true ? 'view-none' : 'card']">
 				<div class="top-card">
 					<div class="icons"><img class="icon" src="../images/vans.png" alt=""></div>

@@ -1,22 +1,22 @@
 <template>
 	<div class="Nav">
 		<div class="nav-icon">
-			<h3>
+			<h3 v-motion :initial="{ opacity: 0, x: 300 }" :enter="{ opacity: 1, x: 0 }" :delay="1200">
 				ALOOFFIT
-				<img class="stroke" src="../images/stroke.jpg" alt="">
+				<img class="stroke" src="../images/brush-stroke-grunge-transparent-background-6.png" alt="">
 			</h3>
 		</div>
 		<div class="nav-links">
 			<ul class="ul-links">
 				<!-- <li class="li"><a href="#home">home</a></li> -->
-				<li class="li"><a href="#about">About</a></li>
-				<li class="li"><a href="#article">Articles</a></li>
-				<li class="li"> <a href="#product">Product</a></li>
-				<li class="li"><a href="#blog">Blog</a></li>
+				<li v-motion :initial="{ y: -100 }" :enter="{ y: 0 }" :delay="100" class="li"><a href="#about">About</a></li>
+				<li v-motion :initial="{ y: -100 }" :enter="{ y: 0 }" :delay="200" class="li"><a href="#article">Articles</a></li>
+				<li v-motion :initial="{ y: -100 }" :enter="{ y: 0 }" :delay="300" class="li"> <a href="#product">Product</a></li>
+				<li v-motion :initial="{ y: -100 }" :enter="{ y: 0 }" :delay="400" class="li"><a href="#blog">Blog</a></li>
 			</ul>
 		</div>
 		<div class="cart">
-			<div class="search-div">
+			<div v-motion :initial="{ opacity:0, x: -300 }" :enter="{ opacity: 1, x: 0 }" :delay="1200" class="search-div">
 				<input class="inp" type="text" placeholder="Search...">
 				<font-awesome-icon class="glass-icon" icon="magnifying-glass" />
 			</div>
@@ -85,7 +85,7 @@ a{
 	font-weight: 600;
 }
 .stroke{
-	width: 40px;
+	width: 70px;
 	display: block;
 }
 .search-div{

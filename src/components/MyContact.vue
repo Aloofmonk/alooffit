@@ -1,15 +1,10 @@
 <template>
 	<div class="contact" id="contact">
 
-		<div class="black-banner">
-			<!-- <div class="nav-icon">
-				<h3>
-					ALOOFFIT
-					<img class="stroke" src="../images/stroke.jpg" alt="">
-				</h3>
-			</div> -->
+		<div v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="400" class="black-banner">
+			<img src="../images/brush-stroke-grunge-transparent-background-6.png" alt="">
 		</div>
-		<div class="middle-cont">
+		<div v-motion :initial="{ opacity: 0 }" :visibleOnce="{ opacity: 1 }" :delay="600" class="middle-cont">
 			<div class="sub-flex">
 	
 				<div class="one">
@@ -68,8 +63,12 @@
 .black-banner{
 	height: 348px;
 	background: black;
-	padding-left: 45%;
+	padding-left: 30px;
 	padding-top: 80px;
+}
+img{
+	width: 100%;
+	filter: invert(100%);
 }
 .middle-cont{
 	margin-top: 50px;
@@ -80,6 +79,7 @@
 	align-items: center;
 	height: 40%;
 	border-bottom: 1px solid black;
+	padding-bottom: 10px;
 }
 .last-flex{
 	margin-left: 75px;

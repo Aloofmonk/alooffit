@@ -7,7 +7,8 @@ import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import {MotionPlugin} from "@vueuse/motion";
 
 library.add(faArrowRight,faMagnifyingGlass,faPhone,faHouse,faCircle);
 
-createApp(App).component("font-awesome-icon", FontAwesomeIcon).mount("#app");
+createApp(App).use(MotionPlugin).component("font-awesome-icon", FontAwesomeIcon).mount("#app");

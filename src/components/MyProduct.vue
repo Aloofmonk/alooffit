@@ -1,18 +1,18 @@
 <template>
 	<div id="product" class="product">
-		<div class="box">
+		<div v-motion :initial="{ opacity: 0, y: 100 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="400" class="box">
 			<h2>NIKE</h2>
 			<img src="../images/nike.png" alt="">
 		</div>
-		<div class="box">
+		<div v-motion :initial="{ opacity: 0, y: 100 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="500" class="box">
 			<h2>ADIDAS</h2>
 			<img src="../images/addshoe.png" alt="">
 		</div>
-		<div class="box">
+		<div v-motion :initial="{ opacity: 0, y: 100 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="600" class="box">
 			<h2>VANS</h2>
 			<img src="../images/vansshoe.png" alt="">
 		</div>
-		<div class=" last box">
+		<div v-motion :initial="{ opacity: 0, y: 100 }" :visibleOnce="{ opacity: 1, y: 0 }" :delay="700" class=" last box">
 			<h2>CONVERSE</h2>
 			<img src="../images/converseshoe.webp" alt="">
 		</div>
