@@ -1,10 +1,10 @@
 <template>
 	<div class="Nav">
 		<div class="nav-icon">
-			<!-- <h3 v-motion :initial="{ opacity: 0, x: 300 }" :enter="{ opacity: 1, x: 0 }" :delay="1200">
+			<h3 v-motion :initial="{ opacity: 0, x: 300 }" :enter="{ opacity: 1, x: 0 }" :delay="1200">
 				ALOOFFIT
 				<img class="stroke" src="../images/brush-stroke-grunge-transparent-background-6.png" alt="">
-			</h3> -->
+			</h3>
 		</div>
 		<div class="nav-links">
 			<ul class="ul-links">
