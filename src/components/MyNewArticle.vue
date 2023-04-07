@@ -25,11 +25,50 @@
 			</div>
 			<div :class="[more === true ? 'view-none' : 'card']">
 				<div class="top-card">
-					<div class="icons"><img class="icon" src="../images/vans.png" alt=""></div>
-					<div class="amount">$65.00</div>
+					<div class="icons"><img class="icon" src="../images/adidas_318-565831.avif" alt=""></div>
+					<div class="amount">$115.00</div>
 				</div>
 				<div class="mid-card">
-					<img src="../images/nike.png" alt="">
+					<img src="../images/addidasshoe.jpg" alt="">
+				</div>
+				<div class="bottom-card">
+					<div class="header">RAIN FENDER</div>
+					<div class="paragraph">First introduced in 1177, the Adidas #32</div>
+				</div>
+			</div>
+			<div :class="[more === true ? 'view-none' : 'card']">
+				<div class="top-card">
+					<div class="icons"><img class="icon" src="../images/puma.png" alt=""></div>
+					<div class="amount">$361.00</div>
+				</div>
+				<div class="mid-card">
+					<img src="../images/converseshoe.webp" alt="">
+				</div>
+				<div class="bottom-card">
+					<div class="header">HIGH TILT</div>
+					<div class="paragraph"> 2077, the Converse #118</div>
+				</div>
+			</div>
+			<div :class="[more === true ? 'view-none' : 'card']">
+				<div class="top-card">
+					<div class="icons"><img class="icon" src="../images/vans.png" alt=""></div>
+					<div class="amount">$605.00</div>
+				</div>
+				<div class="mid-card">
+					<img src="../images/vansshoe.png" alt="">
+				</div>
+				<div class="bottom-card">
+					<div class="header">GUIL RELEASE</div>
+					<div class="paragraph">Sapphire 607, the Vans #626</div>
+				</div>
+			</div>
+			<div :class="[more === true ? 'view-none' : 'card']">
+				<div class="top-card">
+					<div class="icons"><img class="icon" src="../images/nike_318-565950.webp" alt=""></div>
+					<div class="amount">$94.00</div>
+				</div>
+				<div class="mid-card">
+					<img src="../images/addidasshoe.jpg" alt="">
 				</div>
 				<div class="bottom-card">
 					<div class="header">CLASSIC SLIP ON</div>
@@ -38,54 +77,15 @@
 			</div>
 			<div :class="[more === true ? 'view-none' : 'card']">
 				<div class="top-card">
-					<div class="icons"><img class="icon" src="../images/vans.png" alt=""></div>
-					<div class="amount">$65.00</div>
+					<div class="icons"><img class="icon" src="../images/adidas_318-565831.avif" alt=""></div>
+					<div class="amount">$144.00</div>
 				</div>
 				<div class="mid-card">
-					<img src="../images/nike.png" alt="">
+					<img src="../images/addshoe.png" alt="">
 				</div>
 				<div class="bottom-card">
-					<div class="header">CLASSIC SLIP ON</div>
-					<div class="paragraph">First introduced in 1977, the Vans #98</div>
-				</div>
-			</div>
-			<div :class="[more === true ? 'view-none' : 'card']">
-				<div class="top-card">
-					<div class="icons"><img class="icon" src="../images/vans.png" alt=""></div>
-					<div class="amount">$65.00</div>
-				</div>
-				<div class="mid-card">
-					<img src="../images/nike.png" alt="">
-				</div>
-				<div class="bottom-card">
-					<div class="header">CLASSIC SLIP ON</div>
-					<div class="paragraph">First introduced in 1977, the Vans #98</div>
-				</div>
-			</div>
-			<div :class="[more === true ? 'view-none' : 'card']">
-				<div class="top-card">
-					<div class="icons"><img class="icon" src="../images/vans.png" alt=""></div>
-					<div class="amount">$65.00</div>
-				</div>
-				<div class="mid-card">
-					<img src="../images/nike.png" alt="">
-				</div>
-				<div class="bottom-card">
-					<div class="header">CLASSIC SLIP ON</div>
-					<div class="paragraph">First introduced in 1977, the Vans #98</div>
-				</div>
-			</div>
-			<div :class="[more === true ? 'view-none' : 'card']">
-				<div class="top-card">
-					<div class="icons"><img class="icon" src="../images/vans.png" alt=""></div>
-					<div class="amount">$65.00</div>
-				</div>
-				<div class="mid-card">
-					<img src="../images/nike.png" alt="">
-				</div>
-				<div class="bottom-card">
-					<div class="header">CLASSIC SLIP ON</div>
-					<div class="paragraph">First introduced in 1977, the Vans #98</div>
+					<div class="header">GALACTIC PRINCIPLE</div>
+					<div class="paragraph">Kryon Asta 847, the Adidas Supreme</div>
 				</div>
 			</div>
 			<div class="card">
@@ -204,8 +204,9 @@
 	font-size: 80px;
 }
 img{
-	width: 180px;
-	height: 185px;
+	width: 200px;
+	height: 200px;
+	
 }
 .icon{
 	width: 25px;
@@ -219,6 +220,7 @@ img{
 .mid-card{
 	border-left: 2px solid #807f7f;
 	border-right: 2px solid #807f7f;
+	background: rgb(241, 238, 238);
 }
 .card{
 	display: inline-block;
@@ -230,6 +232,7 @@ img{
 	border: 2px solid #807f7f;
 	padding: 6px;
 	font-family: 'Teko', sans-serif;
+	
 }
 .header{
 	font-weight: bold;
@@ -237,13 +240,14 @@ img{
 .paragraph{
 	font-weight: lighter;
 	width: -20px;
-	color: rgb(177, 175, 175);
+	color: rgb(163, 161, 161);
 }
 .top-card{
 	display: flex;
 	justify-content: space-between;
 	border: 2px solid #807f7f;
 	padding: 0px 7px;
+	background: #cacaca;
 }
 .button{
 	position: relative;

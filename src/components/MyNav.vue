@@ -9,10 +9,10 @@
 		<div class="nav-links">
 			<ul class="ul-links">
 				<!-- <li class="li"><a href="#home">home</a></li> -->
-				<li class="li"><a href="#about">about</a></li>
-				<li class="li"><a href="#article">articles</a></li>
-				<li class="li"> <a href="#product">product</a></li>
-				<li class="li"><a href="#blog">blog</a></li>
+				<li class="li"><a href="#about">About</a></li>
+				<li class="li"><a href="#article">Articles</a></li>
+				<li class="li"> <a href="#product">Product</a></li>
+				<li class="li"><a href="#blog">Blog</a></li>
 			</ul>
 		</div>
 		<div class="cart">

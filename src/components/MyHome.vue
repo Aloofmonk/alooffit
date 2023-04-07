@@ -2,23 +2,23 @@
   <div id="home" class="home">
     <MyNav/>
     <div class="big-text">
-      <h1>UNCOVER LIMITED SNEAKERS WITHOUT LIMITATION</h1>
+      <h1>DISCOVER LIMITED SNEAKERS WITHOUT LIMITATION</h1>
     </div>
     <div v-show="showDiv" class="station">
-        <div class="links"><a class='links' href="#home"><font-awesome-icon icon="house" /></a></div>
-        <div class="dots links"><a class='links' href="#about"><font-awesome-icon icon="circle" /></a></div>
-        <div class="dots links"><a class='links' href="#article"><font-awesome-icon icon="circle" /></a></div>
-        <div class="dots links"><a class='links' href="#product"><font-awesome-icon icon="circle" /></a></div>
-        <div class="dots links"><a class='links' href="#blog"><font-awesome-icon icon="circle" /></a></div>
-        <div class="links phone"><a class='links' href="#contact"><font-awesome-icon icon="phone" /></a></div>
+        <div class="home-link links"><a @click="activeLink = 'home'" :class="[activeLink === 'home' ? 'active' : '']" class='links' href="#home"><font-awesome-icon icon="house" /></a></div>
+        <div class="dots links"><a @click="activeLink = 'about'" :class="[activeLink === 'about' ? 'active' : '']" class='links' href="#about"><font-awesome-icon icon="circle" /></a></div>
+        <div class="dots links"><a @click="activeLink = 'article'" :class="[activeLink === 'article' ? 'active' : '']" class='links' href="#article"><font-awesome-icon icon="circle" /></a></div>
+        <div class="dots links"><a @click="activeLink = 'product'" :class="[activeLink === 'product' ? 'active' : '']" class='links' href="#product"><font-awesome-icon icon="circle" /></a></div>
+        <div class="dots links"><a @click="activeLink = 'blog'" :class="[activeLink === 'blog' ? 'active' : '']" class='links' href="#blog"><font-awesome-icon icon="circle" /></a></div>
+        <div class="links phone"><a @click="activeLink = 'contact'" :class="[activeLink === 'contact' ? 'active' : '']" class='links' href="#contact"><font-awesome-icon icon="phone" /></a></div>
     </div>
     <div class="home-card">
         <div class="card1 card">
           <img src="../images/vans.png" alt="">
         </div>
       <div class="card2 card"><img src="../images/puma.png" alt=""></div>
-      <div class="card3 card"><img src="../images/swoosh.png" alt=""></div>
-      <div class="card4 card"><img src="../images/addidas.png" alt=""></div>
+      <div class="card3 card"><img src="../images/nike_318-565950.webp" alt=""></div>
+      <div class="card4 card"><img src="../images/adidas_318-565831.avif" alt=""></div>
     </div>
   </div>
 </template>
@@ -35,6 +35,11 @@ export default {
   },
   props: {
     
+  },
+  data(){
+    return{
+      activeLink: '',
+    }
   },
    setup() {
     const showDiv = ref(false);
@@ -91,7 +96,6 @@ h1{
   border: 2px solid #bbbaba;
   height: 288px;
   padding-left: 65px;
-  /* padding-top: 65px; */
   background: rgb(244,242,242);
 	transition: all .5s ease-out;
 }
@@ -99,14 +103,12 @@ h1{
   border: 2px solid #bbbaba;
   height: 288px;
   padding-left: 65px;
-  /* padding-top: 65px; */
   background: rgb(244,242,242);
 	transition: all .5s ease-out;
 }
 .card3{
   border: 2px solid #bbbaba;
   height: 288px;
-  /* padding-left: 65px; */
   padding-top: 80px;
   background: rgb(244,242,242);
 	transition: all .5s ease-out;
@@ -125,7 +127,7 @@ h1{
   padding-left: 65px;
   padding-top: 40px;
   background-position: right bottom;
-	transition: all .3s ease-in-out;
+	transition: all .5s ease-in-out;
 }
 .card:hover{
   background: black;
@@ -144,22 +146,29 @@ img{
 }
 .station{
   position: fixed;
-  right: 50px;
+  right: 30px;
   bottom: 60px;
   backdrop-filter: blur(5px);
   background: rgba(0,0,0,0.4);
   border-radius: 10px;
-  padding: 20px 10px;
+  padding: 30px 10px;
   z-index: 1000;
 }
 .links{
   color: rgb(255, 253, 253);
+  transition: all .3s ease-in-out;
+}
+.home-links{
+  padding-bottom: 30px;
 }
 .dots{
   font-size: 8px;
-  padding: 5px 4px;
+  padding: 7px 4px;
 }
 .phone{
   padding: 5px 0;
+}
+.active{
+  color: red;
 }
 </style>

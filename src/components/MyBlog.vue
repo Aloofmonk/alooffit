@@ -17,29 +17,29 @@
 				<div class="bottom-text">PROPEL YOUR GAME FORWARD</div>
 			</div>
 			<div :class="[more === true ? 'view-none' : 'card']">
-				<div class="top-text">SPORT</div>
-				<img src="../images/gianis.webp" alt="">
-				<div class="bottom-text">PROPEL YOUR GAME FORWARD</div>
+				<div class="top-text">LADIES</div>
+				<img src="../images/pswalk.jpg" alt="">
+				<div class="bottom-text">MOVE TOWARDS YOUR GOAL</div>
 			</div>
 			<div :class="[more === true ? 'view-none' : 'card']">
-				<div class="top-text">SPORT</div>
-				<img src="../images/gianis.webp" alt="">
-				<div class="bottom-text">PROPEL YOUR GAME FORWARD</div>
+				<div class="top-text">LIFESTYLE</div>
+				<img src="../images/psdress.jpg" alt="">
+				<div class="bottom-text">WE WEAR DRESSES TO</div>
 			</div>
 			<div :class="[more === true ? 'view-none' : 'card']">
-				<div class="top-text">SPORT</div>
-				<img src="../images/gianis.webp" alt="">
-				<div class="bottom-text">PROPEL YOUR GAME FORWARD</div>
+				<div class="top-text">KIDS</div>
+				<img src="../images/pskids.jpg" alt="">
+				<div class="bottom-text">THE LITTLE ONES</div>
 			</div>
 			<div :class="[more === true ? 'view-none' : 'card']">
-				<div class="top-text">SPORT</div>
-				<img src="../images/gianis.webp" alt="">
-				<div class="bottom-text">PROPEL YOUR GAME FORWARD</div>
+				<div class="top-text">FRIENDS</div>
+				<img src="../images/psfriends.jpg" alt="">
+				<div class="bottom-text">MAKE MEMORIES</div>
 			</div>
 			<div :class="[more === true ? 'view-none' : 'card']">
-				<div class="top-text">SPORT</div>
-				<img src="../images/gianis.webp" alt="">
-				<div class="bottom-text">PROPEL YOUR GAME FORWARD</div>
+				<div class="top-text">LEISURE</div>
+				<img src="../images/pswalk.jpg" alt="">
+				<div class="bottom-text">PEACE AND QUIET TIME</div>
 			</div>
 			<div class="card">
 				<div class="top-text">SPORT</div>
@@ -172,11 +172,11 @@ img {
 
 .top-text {
 	font-family: 'Teko', sans-serif;
-	background: white;
+	/* background: white; */
 	position: relative;
 	top: 40px;
 	left: 10px;
-	color: black;
+	color: white;
 	width: 40px;
 	font-size: 20px;
 	padding: 2px 2px;

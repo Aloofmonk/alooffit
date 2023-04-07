@@ -8,6 +8,7 @@
     <MyNewArticle/>
     <MyProduct/>
     <MyBlog/>
+    <MyContact/>
   </div>
 </template>
 
@@ -18,6 +19,7 @@ import MyProduct from './components/MyProduct.vue'
 import MyNewArticle from './components/MyNewArticle.vue';
 import MyLoading from './components/MyLoading.vue';
 import MyBlog from './components/MyBlog.vue';
+import MyContact from './components/MyContact.vue';
 // import MyRelease from './components/MyRelease.vue';
 
 export default {
@@ -28,7 +30,8 @@ export default {
     MyProduct,
     MyNewArticle,
     MyBlog,
-    MyLoading
+    MyLoading,
+    MyContact
     // MyRelease
 },
   data() {
