@@ -3,7 +3,7 @@
 		<div class="top-div">
 			<div class="text">NEW <span v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="300">ARTICLE</span></div>
 			<div v-motion :initial="{ opacity: 0 }" :visibleOnce="{ opacity: 1 }" :delay="500" class="button-border">
-				<div v-motion :initial="{ opacity: 0, x: -100 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="800" @click="more = !more, horizontalScrollUsed = !horizontalScrollUsed" class="button">
+				<div v-motion :initial="{ opacity: 0, x: -100 }" :visibleOnce="{ opacity: 1, x: 0 }" :delay="600" @click="more = !more, horizontalScrollUsed = !horizontalScrollUsed" class="button">
 					{{more === true ? 'RESTORE' : 'VIEW MORE'}}
 				</div>
 			</div>
@@ -227,6 +227,9 @@ img{
 	margin-right: 20px;
 	opacity: 1;
 	transition: all .5s ease-out;
+}
+.card:hover .mid-card{
+	background: rgb(208, 208, 246);
 }
 .bottom-card{
 	border: 2px solid #807f7f;
