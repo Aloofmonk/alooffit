@@ -1,8 +1,8 @@
 <template>
 	<div class="contact" id="contact">
 
-		<div v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="400" class="black-banner">
-			<img src="../images/brush-stroke-grunge-transparent-background-6.png" alt="">
+		<div class="black-banner">
+			<img v-motion :initial="{ opacity: 0, }" :visibleOnce="{ opacity: 1, }" :delay="400" src="../images/brush-stroke-grunge-transparent-background-6.png" alt="">
 		</div>
 		<div v-motion :initial="{ opacity: 0 }" :visibleOnce="{ opacity: 1 }" :delay="600" class="middle-cont">
 			<div class="sub-flex">
