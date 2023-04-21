@@ -59,18 +59,16 @@ export default{
 	font-family: 'Roboto Mono', monospace;
 	letter-spacing: -1.5px;
 }
-.li{
+.li {
+	padding: 0px 4px;
+	border-radius: 2px;
+	background: linear-gradient(to right, black 50%, white 50%);
+	background-size: 200% 100%;
 	background-position: right bottom;
-	padding: 0 4px;
 	transition: all .3s ease-in-out;
 }
-.li:hover {
-	background: linear-gradient(to right, black 50%, white 50%);
-	color: white;
-	background-size: 200% 100%;
+.li:hover{
 	background-position: left bottom;
-	cursor: pointer;
-	border-radius: 2px;
 }
 .li:hover a{
 	color: white;

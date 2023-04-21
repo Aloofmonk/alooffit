@@ -122,21 +122,35 @@ h1{
 	transition: all .5s ease-out;
 }
 .card{
-  border: 2px solid #bbbaba;
-  height: 288px;
-  padding-left: 65px;
-  padding-top: 40px;
-  background-position: right bottom;
-	transition: all .5s ease-in-out;
-}
-.card:hover{
   background: black;
   background: linear-gradient(to right, black 50%,  rgb(244,242,242)50%);
-	background-size: 200% 100%;
-	background-position: left bottom;
-	cursor: pointer;
-	border-radius: 2px;
+  background-size: 200% 100%;
+  background-position: right bottom;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: all .5s ease-in-out;
+  padding-left: 65px;
+  padding-top: 40px;
 }
+.card:hover{
+  /* border: 2px solid #bbbaba;
+  height: 288px;*/
+  padding-top: 60px;
+  background-position: left bottom;
+}
+
+.li {
+	padding: 0px 4px;
+	border-radius: 2px;
+	background: linear-gradient(to right, black 50%, white 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all .3s ease-in-out;
+}
+.li:hover{
+	background-position: left bottom;
+}
+
 .card:hover img{
   filter: invert(90%);
 }
