@@ -58,6 +58,10 @@ export default {
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
+#app{
+  overflow: hidden;
+
+}
 body {
   scroll-snap-type: y mandatory;
 }
