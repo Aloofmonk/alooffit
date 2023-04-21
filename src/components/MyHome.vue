@@ -133,24 +133,9 @@ h1{
   padding-top: 40px;
 }
 .card:hover{
-  /* border: 2px solid #bbbaba;
-  height: 288px;*/
   padding-top: 60px;
   background-position: left bottom;
 }
-
-.li {
-	padding: 0px 4px;
-	border-radius: 2px;
-	background: linear-gradient(to right, black 50%, white 50%);
-	background-size: 200% 100%;
-	background-position: right bottom;
-	transition: all .3s ease-in-out;
-}
-.li:hover{
-	background-position: left bottom;
-}
-
 .card:hover img{
   filter: invert(90%);
 }
