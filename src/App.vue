@@ -1,15 +1,18 @@
 <template>
-  <MyLoading v-if="isLoading"></MyLoading>
-  <div v-else>
-
-    <MyHome/>
-    <MyAbout/>
-    <!-- <MyRelease/> -->
-    <MyNewArticle/>
-    <MyProduct/>
-    <MyBlog/>
-    <MyContact/>
+  <div class="all">
+    <MyLoading v-if="isLoading"></MyLoading>
+    <div v-else>
+  
+      <MyHome/>
+      <MyAbout/>
+      <!-- <MyRelease/> -->
+      <MyNewArticle/>
+      <MyProduct/>
+      <MyBlog/>
+      <MyContact/>
+    </div>
   </div>
+  <p class="mobile">Mobile view not available yet. Please use a PC for optimal experience!</p>
 </template>
 
 <script>
@@ -49,7 +52,7 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto+Mono&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Oswald:wght@600&family=Roboto+Mono&family=Teko&display=swap');
 
 * {
   /* overflow: hidden; */
@@ -71,6 +74,10 @@ section {
   scroll-snap-align: start;
 }
 
+.mobile{
+    visibility: hidden;
+  }
+
 ::-webkit-scrollbar {
 	width: 6px;
 }
@@ -89,5 +96,23 @@ section {
 /* Change the color and style of the scrollbar thumb when hovered */
 ::-webkit-scrollbar-thumb:hover {
 	background-color: #555;
+}
+@media screen and (max-width: 1187px){
+  .all{
+    display: none;
+  }
+
+  #app{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto Mono', monospace;
+  }
+
+  .mobile{
+    visibility: visible;
+
+  }
 }
 </style>
